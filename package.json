@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "mm-webdev-portfolio-v3",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A Gatsby portfolio site for my web applications",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Mitul Mistry <MitulMistryDev@gmail.com>",
   "dependencies": {
     "gatsby": "^4.5.4",
     "gatsby-plugin-gatsby-cloud": "^4.5.2",
@@ -37,9 +37,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/MitulMistry/mm-webdev-portfolio-v3"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/MitulMistry/mm-webdev-portfolio-v3/issues"
   }
 }
