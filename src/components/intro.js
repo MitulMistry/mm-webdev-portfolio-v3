@@ -1,6 +1,6 @@
 import React from "react"
 
-import { profileText } from "../data"
+import { profileText } from "../appData"
 
 const Intro = () => (
   <div className="intro">

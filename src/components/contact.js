@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 
-import { socialMedia } from "../data"
+import { socialMedia } from "../appData"
 
 const Contact = () => (
   <div className="contact">

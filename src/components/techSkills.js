@@ -1,6 +1,6 @@
 import React from "react"
 
-import { techSkillsText } from "../data"
+import { techSkillsText } from "../appData"
 
 const TechSkills = () => {
   var paragraphs =[];
