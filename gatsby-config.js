@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://mitulmistry.com/`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

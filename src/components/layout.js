@@ -7,7 +7,7 @@ import { Container } from "reactstrap"
 
 // import "./layout.css"
 import "bootstrap/dist/css/bootstrap.css"
-import "../styles/default.css"
+import "../styles/default.scss"
 
 const Layout = ({ children }) => {
   return (
