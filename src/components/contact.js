@@ -9,6 +9,7 @@ import { socialMedia } from "../appData"
 
 const Contact = () => (
   <div className="contact">
+    <h2>Contact</h2>
     <Row>
       <Col md="2">
         <Button href={`mailto:${socialMedia.email}`} color="primary" outline rel="noopener noreferrer">
