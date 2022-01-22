@@ -9,7 +9,7 @@ const ProjectCards = ({ projects }) => {
   let row = []
   const numberOfColumns = 3
 
-  projects.forEach(function(project, i) {
+  projects.forEach((project, i) => {
     row.push(
       <ProjectCard
         key={`project-card-${i}`}

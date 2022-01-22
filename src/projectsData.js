@@ -1,16 +1,16 @@
-import imgAicExplorer from "./images/gatsby-astronaut.png"
-import imgStoryplan from "./images/gatsby-astronaut.png"
-import imgSketchbook from "./images/gatsby-astronaut.png"
-import imgSteamNavigator from "./images/gatsby-astronaut.png"
-import imgGoogleNews from "./images/gatsby-astronaut.png"
-import imgPaperTrader from "./images/gatsby-astronaut.png"
-import imgJournalTool from "./images/gatsby-astronaut.png"
-import imgTheValley from "./images/gatsby-astronaut.png"
-import imgFriendFinder from "./images/gatsby-astronaut.png"
-import imgPostIt from "./images/gatsby-astronaut.png"
-import imgFrazetta from "./images/gatsby-astronaut.png"
-import imgArtSmart from "./images/gatsby-astronaut.png"
-import imgCmd from "./images/gatsby-astronaut.png"
+import imgAicExplorer from "./images/app_aic_explorer.jpg"
+import imgStoryplan from "./images/app_storyplan.jpg"
+import imgSketchbook from "./images/app_sketchbook.jpg"
+import imgSteamNavigator from "./images/app_steam_navigator.jpg"
+import imgGoogleNews from "./images/app_react_google_news.jpg"
+import imgPaperTrader from "./images/app_paper_trader.jpg"
+import imgJournalTool from "./images/app_journal_tool.jpg"
+import imgTheValley from "./images/app_the_valley_react.jpg"
+import imgFriendFinder from "./images/app_friend_finder.jpg"
+import imgPostIt from "./images/app_post_it.jpg"
+import imgFrazetta from "./images/app_frazetta.jpg"
+import imgArtSmart from "./images/app_artsmart.jpg"
+import imgCmd from "./images/app_cmd.jpg"
 
 export const featuredProjects = [
   {
@@ -51,28 +51,6 @@ export const featuredProjects = [
     github: "https://github.com/MitulMistry/the-valley-react"
   },
   {
-    title: "Paper Trader",
-    image: imgPaperTrader,
-    description: "A Flask application to practice trading stocks using the IEX Cloud API. Users can buy and sell stocks based on current market prices.",
-    bullets: [
-      "Developed a Flask back end using Python to manage user authentication, track transactions, calculate gains and losses, and store data using PostgreSQL.",
-      "Leveraged external APIs including IEX to get real time stock data as well as News API to provide related news articles for stock research."
-    ],
-    url: "https://flask-paper-trader.herokuapp.com/",
-    github: "https://github.com/MitulMistry/paper-trader"
-  },
-  {
-    title: "Journal Tool",
-    image: imgJournalTool,
-    description: "A Django application for making journal entries and tracking mood. Users can keep track of events, activities, and cognitive distortions, and leverage associations between them.",
-    bullets: [
-      "Used a combination of Django templates, JavaScript, and internal APIs to create web pages with asynchronous functionality.",
-      "Developed a Django back end to manage user authentication, process models, and calculate statistics for journal entries."
-    ],
-    url: "https://journal-tool.herokuapp.com/",
-    github: "https://github.com/MitulMistry/journal-tool"
-  },
-  {
     title: "Steam Navigator",
     image: imgSteamNavigator,
     description: "A front end AngularJS web application for viewing the Steam Store. Displays games for currently trending categories and in-depth storefront info for individual games.",
@@ -93,6 +71,28 @@ export const featuredProjects = [
     ],
     url: "https://react-google-news.herokuapp.com/",
     github: "https://github.com/MitulMistry/react-google-news"
+  },
+  {
+    title: "Paper Trader",
+    image: imgPaperTrader,
+    description: "A Flask application to practice trading stocks using the IEX Cloud API. Users can buy and sell stocks based on current market prices.",
+    bullets: [
+      "Developed a Flask back end using Python to manage user authentication, track transactions, calculate gains and losses, and store data using PostgreSQL.",
+      "Leveraged external APIs including IEX to get real time stock data as well as News API to provide related news articles for stock research."
+    ],
+    url: "https://flask-paper-trader.herokuapp.com/",
+    github: "https://github.com/MitulMistry/paper-trader"
+  },
+  {
+    title: "Journal Tool",
+    image: imgJournalTool,
+    description: "A Django application for making journal entries and tracking mood. Users can keep track of events, activities, and cognitive distortions, and leverage associations between them.",
+    bullets: [
+      "Used a combination of Django templates, JavaScript, and internal APIs to create web pages with asynchronous functionality.",
+      "Developed a Django back end to manage user authentication, process models, and calculate statistics for journal entries."
+    ],
+    url: "https://journal-tool.herokuapp.com/",
+    github: "https://github.com/MitulMistry/journal-tool"
   },
   {
     title: "Sketchbook",
