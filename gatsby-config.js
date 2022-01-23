@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Mitul Mistry - Web Developer`,
+    title: `Mitul Mistry, Web Developer`,
     description: `Mitul Mistry is a full stack web developer with experience in Rails and React.`,
     author: `@Jackal_MM`,
     siteUrl: `https://mitulmistry.com/`,
@@ -29,7 +29,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/mm_icon_01.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
