@@ -2,10 +2,59 @@
 
 $primary-color: #0063E3;
 
+:root {
+  --bs-primary: #0063E3;
+  --bs-primary-rgb: 0, 99, 227;
+}
+
 body {
   font-family: 'Open Sans', var(--bs-font-sans-serif);
 }
 
 .content {
   max-width: 960px;
+}
+
+#main-navbar {
+  padding: .35rem 0;
+
+  .navbar-brand {
+    padding-right: 2rem;
+
+    .navbar-logo {
+      min-width: 50px;
+      max-width: 70px;
+    }
+  }
+
+  .nav-link {
+    color: rgba(255, 255, 255, 0.70);
+    font-weight: 600;
+    padding-right: 2rem;
+  }
+
+  .nav-link:hover {
+    color: rgba(255, 255, 255, 0.90);
+  }
+
+  .navbar-social {
+    .nav-link {
+      font-size: 1.3rem;
+      padding: 0 .5rem;
+    }
+  }
+}
+
+// Use padding-top for sections to offset sticky navbar for section links
+#about {
+  margin-top: 4rem;
+  padding-top: 4rem;
+}
+
+#projects {
+  padding-top: 4rem;
+}
+
+#contact {
+  padding-top: 4rem;
 }

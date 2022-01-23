@@ -6,9 +6,9 @@ import ProjectCards from "./projectCards"
 import { featuredProjects, projectCards, webDesigns } from "../projectsData"
 
 const Projects = () => (
-  <div className="projects-section">
+  <div id="projects">
     <h2>Projects</h2>
-    <div className="projects">
+    <div className="projects-main">
       <FeaturedProjects
         projects={featuredProjects}
       />

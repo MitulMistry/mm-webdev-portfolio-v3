@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Container, Collapse, Navbar, NavbarBrand, NavbarToggler, Nav, NavItem, NavLink } from "reactstrap"
+import imgLogo from "../images/mm_logo_01.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
@@ -12,11 +13,19 @@ const NavBar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <Navbar id="main-navbar" className="sticky-top" color="light" light expand="sm">
+    <Navbar
+      id="main-navbar"
+      color="primary"
+      dark
+      expand="sm"
+      fixed="top"
+    >
       <Container>
         <NavbarToggler className="ms-auto" onClick={toggleMenu} />
         <Collapse isOpen={menuOpen} navbar>
-          <NavbarBrand href="/">MM</NavbarBrand>
+          <NavbarBrand href="/">
+            <img src={imgLogo} className="navbar-logo" alt="Logo" />
+          </NavbarBrand>
           <Nav navbar className="me-auto">
             <NavItem>
               <NavLink href="#about">About</NavLink>

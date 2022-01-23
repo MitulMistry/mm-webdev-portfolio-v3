@@ -8,7 +8,7 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 import { socialMedia } from "../appData"
 
 const Contact = () => (
-  <div className="contact">
+  <div id="contact">
     <h2>Contact</h2>
     <Row>
       <Col md="2">

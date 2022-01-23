@@ -5,14 +5,16 @@ import Intro from "./intro"
 import TechSkills from "./techSkills"
 
 const About = () => (
-  <Row>
-    <Col>
-      <Intro />
-    </Col>
-    <Col>
-      <TechSkills />
-    </Col>
-  </Row>
+  <div id="about">
+    <Row>
+      <Col>
+        <Intro />
+      </Col>
+      <Col>
+        <TechSkills />
+      </Col>
+    </Row>
+  </div>
 )
 
 export default About
