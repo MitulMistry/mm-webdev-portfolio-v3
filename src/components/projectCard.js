@@ -6,7 +6,7 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 const ProjectCard = ({ project }) => (
-  <Col md="4" className="col-app">
+  <Col md="4" className="col-project-card">
     <a href={project.url || project.github} target="_blank" rel="noopener noreferrer">
       <img src={project.image} className="img-fluid img-rounded img-app" alt="App screenshot" />
     </a>
@@ -14,12 +14,12 @@ const ProjectCard = ({ project }) => (
     <p>{project.description}</p>
     <p>
       {project.url &&
-        <Button href={project.url} target="_blank" color="primary" outline rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faExternalLinkAlt} /> Live Site
+        <Button href={project.url} target="_blank" color="primary" outline size="sm" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faExternalLinkAlt} /> Demo Site
         </Button>
       }
       {project.github &&
-        <Button href={project.github} target="_blank" color="primary" outline rel="noopener noreferrer">
+        <Button href={project.github} target="_blank" color="primary" outline size="sm" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} /> Github
         </Button>
       }

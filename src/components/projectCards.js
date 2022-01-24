@@ -18,7 +18,7 @@ const ProjectCards = ({ projects }) => {
     )
 
     if (row.length === numberOfColumns || i === projects.length - 1) {
-      total.push(<Row className="row-app" key={total.length}>{row}</Row>)
+      total.push(<Row className="row-project-cards" key={total.length}>{row}</Row>)
       row = [] // Empty the row
     }
   })

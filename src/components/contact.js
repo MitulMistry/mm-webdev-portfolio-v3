@@ -12,12 +12,12 @@ const Contact = () => (
     <h2>Contact</h2>
     <Row>
       <Col md="2">
-        <Button href={`mailto:${socialMedia.email}`} color="primary" outline rel="noopener noreferrer">
+        <Button href={`mailto:${socialMedia.email}`} color="primary" outline size="sm" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faEnvelope} /> Email
         </Button>
       </Col>
       <Col>
-        <p>Email me at</p>
+        <p>Email me at:</p>
         <p>
           <a href={`mailto:${socialMedia.email}`} rel="noopener noreferrer">
             {socialMedia.email}
@@ -27,12 +27,12 @@ const Contact = () => (
     </Row>
     <Row className="row-top-margin">
       <Col md="2">
-        <Button href={socialMedia.linkedin} target="_blank" color="primary" outline rel="noopener noreferrer">
+        <Button href={socialMedia.linkedin} target="_blank" color="primary" outline size="sm" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedinIn} /> LinkedIn
         </Button>
       </Col>
       <Col>
-        <p>Or add me on LinkedIn at</p>
+        <p>Or add me on LinkedIn at:</p>
         <p>
           <a href={socialMedia.linkedin} target="_blank" rel="noopener noreferrer">
             {`LinkedIn.com/in/${socialMedia.linkedinUser}`}

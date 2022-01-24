@@ -41,7 +41,7 @@ export const featuredProjects = [
   {
     title: "The Valley",
     image: imgTheValley,
-    description: "An HTML5 text adventure system using JavaScript and Phaser CE",
+    description: "A text adventure system for non-linear storytelling and branching user choices. Keeps track of user's choices and interprets them over the course of the narrative.",
     bullets: [
       "Implemented a text display system using HTML5 Canvas via Phaser, then migrated system to React.",
       "Integrated Redux store with JavaScript game management classes to maintain and update game state and data.",

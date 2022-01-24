@@ -10,7 +10,7 @@ const TechSkills = () => {
   }
 
   return (
-    <div className="techSkills">
+    <div className="tech-skills">
       <h2>Technical Skills</h2>
       {paragraphs}
     </div>
