@@ -1,7 +1,4 @@
 module.exports = {
-  // Unique Google Analytics tracking number
-  gaTrackingID: 'UA-6842596-2',
-
   profileText: {
     name: "Mitul Mistry",
     title: "Full Stack Web Developer",
