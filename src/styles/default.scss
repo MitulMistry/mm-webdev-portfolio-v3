@@ -19,12 +19,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 600;
+  line-height: .8;
+  margin-bottom: 0.9rem;
 }
 
 h2 {
   color: $primary-color;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin-bottom: 1.5rem;
 }
 
@@ -83,7 +85,7 @@ a {
 
 // Use padding-top for sections to offset sticky navbar for section links
 #about {
-  margin-top: 4rem;
+  margin-top: 3rem;
   padding-top: 4rem;
 
   h3 {
@@ -115,17 +117,22 @@ a {
 }
 
 #projects {
-  padding-top: 4rem;
+  padding-top: 3rem;
 
   .row-featured-project {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 
     .col-image {
       padding-right: 2rem;
     }
 
+    p {
+      margin-bottom: .8rem;
+    }
+
     .app-bullets {
       font-size: .9rem;
+      margin-left: 1.25em;
 
       .fa-li {
         color: $primary-color;
@@ -153,7 +160,7 @@ a {
 }
 
 #contact {
-  padding-top: 4rem;
+  padding-top: 3rem;
 
   p {
     margin-bottom: 0;
