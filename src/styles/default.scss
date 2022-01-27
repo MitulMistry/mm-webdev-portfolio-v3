@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&display=swap');
 
 @import "bootstrap/scss/functions";
@@ -5,6 +7,8 @@
 @import "bootstrap/scss/mixins";
 
 $primary-color: #0063E3;
+$page-max-width: map.get($grid-breakpoints, lg); //960px
+$page-min-width: 200px;
 
 :root {
   --bs-primary: #0063E3;
@@ -16,8 +20,8 @@ body {
 }
 
 .content {
-  max-width: 960px;
-  min-width: 200px;
+  max-width: $page-max-width;
+  min-width: $page-min-width;
 
   @include media-breakpoint-down(sm) {
     padding: 0 .5rem;
@@ -58,12 +62,31 @@ a {
 #main-navbar {
   padding: .35rem 0;
 
+  .container {
+    max-width: $page-max-width;
+
+    @include media-breakpoint-up(lg) {
+      padding-left: 0;
+      padding-right: 0;
+    }    
+  }
+
+  @include media-breakpoint-down(sm) {
+    .navbar-collapse {
+      text-align: center;
+    }
+  }
+
   .navbar-brand {
     margin-right: 3rem;
 
     .navbar-logo {
       min-width: 50px;
       max-width: 70px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: none;
     }
   }
 
@@ -77,6 +100,12 @@ a {
     color: rgba(255, 255, 255, 0.90);
   }
 
+  // @include media-breakpoint-down(sm) {
+  //   .nav-item:first-of-type {
+  //     margin-top: .5rem;
+  //   }
+  // }
+
   .navbar-social {
     .nav-link {
       font-size: 1.3rem;
@@ -88,6 +117,16 @@ a {
       .nav-link {
         margin-right: 0;
       }
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .social-text {
+      display: none;
     }
   }
 }

@@ -36,6 +36,21 @@ const NavBar = () => {
             <NavItem>
               <NavLink href="#contact">Contact</NavLink>
             </NavItem>
+            <NavItem className="social-text">
+              <NavLink href={socialMedia.github} target="_blank">
+                GitHub
+              </NavLink>
+            </NavItem>
+            <NavItem className="social-text">
+              <NavLink href={socialMedia.linkedin} target="_blank">
+                LinkedIn
+              </NavLink>
+            </NavItem>
+            <NavItem className="social-text">
+              <NavLink href={`mailto:${socialMedia.email}`} target="_blank">
+                Email
+              </NavLink>
+            </NavItem>
           </Nav>
 
           <Nav navbar className="ms-auto navbar-social">
