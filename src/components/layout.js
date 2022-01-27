@@ -5,7 +5,10 @@ import NavBar from "./navbar"
 import Footer from "./footer"
 import { Container } from "reactstrap"
 
-import "bootstrap/scss/bootstrap.scss"
+// Load all Bootstrap styling
+// import "bootstrap/scss/bootstrap.scss"
+
+// Custom styles (Bootstrap elements are selectively imported)
 import "../styles/default.scss"
 
 const Layout = ({ children }) => {
