@@ -16,10 +16,10 @@ const About = () => {
   return (
     <div id="about" ref={revealContainer}>
       <Row>
-        <Col>
+        <Col md="6" >
           <Intro />
         </Col>
-        <Col>
+        <Col md="6">
           <TechSkills />
         </Col>
       </Row>

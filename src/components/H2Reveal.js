@@ -4,7 +4,7 @@ import scrollRevealUtil from "../util/scrollRevealUtil"
 
 // Use like this:
 // <H2Reveal>Text</H2Reveal>
-const H2Reveal = ({ children }) => {
+const H2Reveal = ({ children, className }) => {
   const revealContainer = useRef(null)
 
   useEffect(() => {
@@ -12,7 +12,7 @@ const H2Reveal = ({ children }) => {
   }, [])
 
   return (
-    <h2 ref={revealContainer}>{children}</h2>
+    <h2 className={className} ref={revealContainer}>{children}</h2>
   )
 }
 

@@ -19,12 +19,12 @@ const Contact = () => {
     <div id="contact" ref={revealContainer}>
       <h2>Contact</h2>
       <Row>
-        <Col md="2">
+        <Col sm="2">
           <Button href={`mailto:${socialMedia.email}`} color="primary" outline size="sm" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faEnvelope} /> Email
           </Button>
         </Col>
-        <Col>
+        <Col sm="10" className="email-text">
           <p>Email me at:</p>
           <p>
             <a href={`mailto:${socialMedia.email}`} rel="noopener noreferrer">
@@ -34,12 +34,12 @@ const Contact = () => {
         </Col>
       </Row>
       <Row className="row-top-margin">
-        <Col md="2">
+        <Col sm="2">
           <Button href={socialMedia.linkedin} target="_blank" color="primary" outline size="sm" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedinIn} /> LinkedIn
           </Button>
         </Col>
-        <Col>
+        <Col sm="10" className="linkedin-text">
           <p>Or add me on LinkedIn at:</p>
           <p>
             <a href={socialMedia.linkedin} target="_blank" rel="noopener noreferrer">

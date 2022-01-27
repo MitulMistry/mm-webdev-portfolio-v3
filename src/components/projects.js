@@ -17,7 +17,7 @@ const Projects = () => (
       />
     </div>
     
-    <H2Reveal>Web Design</H2Reveal>
+    <H2Reveal className="secondary">Web Design</H2Reveal>
     <div className="web-design">
       <ProjectCards
         projects={webDesigns}

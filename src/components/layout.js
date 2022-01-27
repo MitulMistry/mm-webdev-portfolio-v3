@@ -5,8 +5,7 @@ import NavBar from "./navbar"
 import Footer from "./footer"
 import { Container } from "reactstrap"
 
-// import "./layout.css"
-import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/scss/bootstrap.scss"
 import "../styles/default.scss"
 
 const Layout = ({ children }) => {

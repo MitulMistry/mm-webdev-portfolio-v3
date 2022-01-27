@@ -17,12 +17,12 @@ const FeaturedProject = ({ project }) => {
   return (
     <div ref={revealContainer}>
       <Row className="row-featured-project">
-        <Col className="col-image">
+        <Col md="6" className="col-image">
           <a href={project.url || project.github} target="_blank" rel="noopener noreferrer">
             <img src={project.image} className="img-fluid img-rounded img-app" alt="App screenshot" />
           </a>
         </Col>
-        <Col className="col-description">
+        <Col md="6" className="col-description">
           <h3>{project.title}</h3>
           <p>{project.description}</p>
           <ul className="fa-ul app-bullets">

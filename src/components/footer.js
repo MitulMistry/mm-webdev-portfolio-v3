@@ -7,7 +7,7 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 import { socialMedia } from "../appData"
 
 const Footer = () => (
-  <footer className="footer-main text-sm-center">
+  <footer className="footer-main text-center">
     <p className="footer-icons">
       <a href={socialMedia.github} target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faGithub} />
@@ -24,7 +24,7 @@ const Footer = () => (
         Github repo for this site
       </a>
     </p>
-    <p className="footer-copyright">
+    <p>
       &copy; Mitul Mistry {new Date().getFullYear()}
     </p>
   </footer>
