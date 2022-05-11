@@ -1,7 +1,7 @@
 module.exports = {
   profileText: {
     name: "Mitul Mistry",
-    title: "Full Stack Web Developer",
+    title: "Web Developer",
     subtitle: "I'm a software engineer with experience in Rails and React.",
     bio: [
       "I take web applications from design to implementation and I'm comfortable working in both the front and back end.",
@@ -19,11 +19,11 @@ module.exports = {
   },
 
   techSkillsText: {
-    "Languages": "JavaScript, Ruby, Python, HTML/CSS/Sass, C",
-    "Frameworks": "Ruby on Rails, React, AngularJS, Django, Flask",
-    "Databases": "PostgreSQL, SQLite",
-    "Tools": "jQuery, ActiveRecord, Git, Github, Bootstrap, Heroku, Webpack",
-    "Concepts": "Object-oriented programming, AJAX, RESTful architecture/APIs",
+    "Languages": "JavaScript, Ruby, Python, C, HTML5/CSS3/Sass",
+    "Frameworks": "Ruby on Rails, React, Redux, AngularJS, Django, Node",
+    "Databases": "PostgreSQL, SQLite, MongoDB",
+    "Tools": "jQuery, Git, Webpack, Docker, GraphQL, Bootstrap",
+    "Concepts": "Object-oriented programming, AJAX, RESTful architecture/APIs, TDD",
     "Software": "Linux, Photoshop, Illustrator"
   },
 

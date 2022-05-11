@@ -18,9 +18,10 @@ export const featuredProjects = [
     image: imgAicExplorer,
     description: "A full stack application to explore artworks from the Art Institute of Chicago. Users can search through the museum's catalog, save artworks to their account, and add artworks to custom collections.",
     bullets: [
-      "Integrated external API with a Rails back end and PostgreSQL database.",
-      "Designed and implemented a React front end to interact with Rails API.",
-      "Used Redux to manage state for the front end."
+      "Leveraged external API to search and display artworks using a Rails back end with the Faraday gem.",
+      "Utilized React to create a responsive single page front end to interact with the Rails API and receive serialized data.",
+      "Implemented ability to save artworks and create collections using React forms, ActiveRecord, and PostgreSQL.",
+      "Used Redux to manage state for the front end and store data received from API requests."
     ],
     url: "https://aic-explorer.herokuapp.com/",
     github: "https://github.com/MitulMistry/art-institute-explorer"
@@ -30,10 +31,10 @@ export const featuredProjects = [
     image: imgStoryplan,
     description: "A web application for writers to plan and share their work-in-progress stories. Users can create stories, chapters, and characters, and differentiate them using genres and target audiences.",
     bullets: [
-      "Built application with Ruby on Rails using MVC pattern and RESTful routes for resources.",
-      "Implemented Devise gem and Facebook OmniAuth for user registration and authentication.",
-      "Created front end with Rails templates and partials, then styled with Bootstrap (HTML, CSS, ERB).",
-      "Wrote comprehensive test suite including unit and integration tests with RSpec and Capybara."
+      "Built an expansive network of RESTful resources including stories and characters using ActiveRecord relationships.",
+      "Developed a high coverage test suite including unit, controller, and integration tests using RSpec and Capybara.",
+      "Implemented user registration and authentication with Facebook using the Devise and OmniAuth gems.",
+      "Utilized AWS S3 and Active Storage to implement user image uploads and allow for scalability of image services."
     ],
     url: "https://rails-storyplan.herokuapp.com/",
     github: "https://github.com/MitulMistry/rails-storyplan"
@@ -41,36 +42,36 @@ export const featuredProjects = [
   {
     title: "The Valley",
     image: imgTheValley,
-    description: "A text adventure system for non-linear storytelling and branching user choices. Keeps track of user's choices and interprets them over the course of the narrative.",
+    description: "A text adventure system for non-linear storytelling and branching user choices.",
     bullets: [
-      "Implemented a text display system using HTML5 Canvas via Phaser, then migrated system to React.",
-      "Integrated Redux store with JavaScript game management classes to maintain and update game state and data.",
-      "Designed a story production pipeline for CSV to JSON files which are then parsed in game."
+      "Integrated Redux store with custom JavaScript game management classes to maintain and update game state.",
+      "Designed a story production pipeline for CSV to JSON files which are then parsed and loaded in game.",
+      "Utilized Redux, JSON story files, and classes to keep track of choices and interpret them throughout the narrative."
     ],
     url: "https://the-valley.herokuapp.com/",
     github: "https://github.com/MitulMistry/the-valley-react"
-  },
-  {
-    title: "Steam Navigator",
-    image: imgSteamNavigator,
-    description: "A front end AngularJS web application for viewing the Steam Store. Displays games for currently trending categories and in-depth storefront info for individual games.",
-    bullets: [
-      "Developed a Node and Express back end to interact with external API.",
-      "Implemented AngularJS Material for layout and styling."
-    ],
-    url: "https://steam-navigator.herokuapp.com/",
-    github: "https://github.com/MitulMistry/steam-navigator"
   },
   {
     title: "React Google News",
     image: imgGoogleNews,
     description: "A React front end application using the Google News API. Displays news stories from different sources in a reflowable card grid structure.",
     bullets: [
-      "Developed a Node and Express back end to interact with external API.",
-      "Used Webpack with custom configurations to build project."
+      "Developed a simple Node and Express back end to interact with external API and reroute responses to the front end.",
+      "Used Webpack with custom configurations using Webpack-Merge to build project for development and production."
     ],
     url: "https://react-google-news.herokuapp.com/",
     github: "https://github.com/MitulMistry/react-google-news"
+  },
+  {
+    title: "Steam Navigator",
+    image: imgSteamNavigator,
+    description: "A front end AngularJS web application for viewing the Steam Store using the Storefront API. Displays games for currently trending categories and in-depth product info for individual games.",
+    bullets: [
+      "Migrated legacy code for AngularJS into a modern Webpack build process to improve performance and maintainability.",
+      "Implemented AngularJS Material for layout and styling to achieve a unified, professional aesthetic."
+    ],
+    url: "https://steam-navigator.herokuapp.com/",
+    github: "https://github.com/MitulMistry/steam-navigator"
   },
   {
     title: "Paper Trader",
@@ -99,7 +100,7 @@ export const featuredProjects = [
     image: imgSketchbook,
     description: "A Rails/AngularJS web application for artists to curate and share their sketches. Users can upload images and filter them based on tags.",
     bullets: [
-      "Developed a Rails back end configured as an API using ActiveModel Serializers.",
+      "Developed a Rails back end configured as an API using serializers to enable asynchronous CRUD requests for the front end.",
       "Implemented Active Storage and integrated with AngularJS to handle image uploading, along with AWS S3 for production."
     ],
     url: "https://angular-sketchbook.herokuapp.com/",
@@ -124,7 +125,7 @@ export const projectCards = [
   {
     title: "Steam Top Sellers CLI Gem",
     image: imgCmd,
-    description: "A Ruby command line application to get the current top selling games on Steam. Users can list currently top selling games and get more info on individuals. Queries Steam API and parses JSON responses into custom classes.",
+    description: "A Ruby command line application to get the current top selling games on Steam. Users can list currently top selling games and get more info on individual products. Queries Steam Storefront API and parses JSON responses into custom classes using an object-oriented paradigm.",
     github: "https://github.com/MitulMistry/steam-top-sellers-cli-gem"
   }
 ]
