@@ -11,6 +11,15 @@ import { Container } from "reactstrap"
 // Custom styles (Bootstrap elements are selectively imported)
 import "../styles/default.scss"
 
+// Manually import Font Awesome styles and disalbe logic to insert
+// styles into DOM on page load, fixing bug with icons loading huge
+// and then shrinking to appropriate size.
+// https://medium.com/@fabianterh/fixing-flashing-huge-font-awesome-icons-on-a-gatsby-static-site-787e1cfb3a18
+import { config } from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-svg-core/styles.css"
+
+config.autoAddCss = false
+
 const Layout = ({ children }) => {
   return (
     <>

@@ -2,7 +2,7 @@
 A [Gatsby](https://www.gatsbyjs.com/) portfolio site for my web applications. The previous React version can be found [here](https://github.com/MitulMistry/mm-webdev-portfolio-v2), while the initial HTML version can be found [here](https://github.com/MitulMistry/mm-webdev-portfolio-v1).
 
 ## Gatsby
-This project was was developed using the default [Gatsby starter template](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-default/).
+This project was developed using the default [Gatsby starter template](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-default/).
 
 You can find the documentation for Gatsby [here](https://www.gatsbyjs.com/docs).
 
@@ -14,12 +14,16 @@ The Gatsby CLI is used to build and run the application. Node Package Manager (N
 3. Run `npm install` in the command line while in the project directory. It will install dependencies from the [package.json file](../master/package.json).
 4. To build for development and run the local dev server at http://localhost:8000, run `gatsby develop`.
 
+Fonts are preloaded for production builds using [gatsby-plugin-preload-fonts](https://www.gatsbyjs.com/plugins/gatsby-plugin-preload-fonts/). If any fonts or routes have been changed, run `gatsby develop` and `npm preload-fonts` to rebuild the font cache.
+
 ## Commands
 `gatsby develop` - Runs the app in development mode.
 
 `gatsby build` - Builds the app for production to the build folder.
 
 `gatsby serve` - Serve the application built for production.
+
+`npm preload-fonts` - Build the font preload cache (while development server is running).
 
 _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries)._
 
