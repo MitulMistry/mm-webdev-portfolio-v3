@@ -16,49 +16,50 @@ export const featuredProjects = [
   {
     title: "Art Institute Explorer",
     image: imgAicExplorer,
-    description: "A full stack application to explore artworks from the Art Institute of Chicago. Users can search through the museum's catalog, save artworks to their account, and add artworks to custom collections.",
+    description: "A full stack application to explore artworks from the Art Institute of Chicago. Users can search through the museum’s catalog and add artworks to custom collections.",
     bullets: [
-      "Leveraged external API to search and display artworks using a Rails back end with the Faraday gem.",
-      "Utilized React to create a responsive single page front end to interact with the Rails API and receive serialized data.",
-      "Implemented ability to save artworks and create collections using React forms, ActiveRecord, and PostgreSQL.",
-      "Used Redux to manage state for the front end and store data received from API requests."
+      "Integrated a React front end with a Rails back end to interact with the Art Institute API.",
+      "Implemented feature to save artworks and create collections using React forms, ActiveRecord relationships, and a PostgreSQL database.",
+      "Used Redux to manage state for the front end and store data from API requests."
     ],
+    tags: ["React", "Redux", "Ruby on Rails"],
     url: "https://aic-explorer.herokuapp.com/",
     github: "https://github.com/MitulMistry/art-institute-explorer"
   },
   {
     title: "Storyplan",
     image: imgStoryplan,
-    description: "A web application for writers to plan and share their work-in-progress stories. Users can create stories, chapters, and characters, and differentiate them using genres and target audiences.",
+    description: "A web application for writers to plan and share their work-in-progress stories. Users can organize their stories into chapters and include characters, genres, and target audiences.",
     bullets: [
-      "Built an expansive network of RESTful resources including stories and characters using ActiveRecord relationships.",
       "Developed a high coverage test suite including unit, controller, and integration tests using RSpec and Capybara.",
-      "Implemented user registration and authentication with Facebook using the Devise and OmniAuth gems.",
+      "Implemented user authentication with Facebook using the Devise and OmniAuth gems.",
       "Utilized AWS S3 and Active Storage to implement user image uploads and allow for scalability of image services."
     ],
+    tags: ["Ruby on Rails"],
     url: "https://rails-storyplan.herokuapp.com/",
     github: "https://github.com/MitulMistry/rails-storyplan"
   },
   {
     title: "The Valley",
     image: imgTheValley,
-    description: "A text adventure system for non-linear storytelling and branching user choices.",
+    description: "A text adventure system for non-linear storytelling and branching user choices. Keeps track of user’s decisions and interprets them over the course of the narrative.",
     bullets: [
       "Integrated Redux store with custom JavaScript game management classes to maintain and update game state.",
-      "Designed a story production pipeline for CSV to JSON files which are then parsed and loaded in game.",
-      "Utilized Redux, JSON story files, and classes to keep track of choices and interpret them throughout the narrative."
+      "Designed a story production pipeline for CSV to JSON files which are then parsed and loaded in game."
     ],
+    tags: ["JavaScript", "React", "Redux"],
     url: "https://the-valley.herokuapp.com/",
     github: "https://github.com/MitulMistry/the-valley-react"
   },
   {
     title: "React Google News",
     image: imgGoogleNews,
-    description: "A React front end application using the Google News API. Displays news stories from different sources in a reflowable card grid structure.",
+    description: "A React front end application using the Google News API. Displays news stories from different sources in a reflowable grid structure.",
     bullets: [
       "Developed a simple Node and Express back end to interact with external API and reroute responses to the front end.",
-      "Used Webpack with custom configurations using Webpack-Merge to build project for development and production."
+      "Used Webpack with custom configurations using Webpack-Merge to optimize project for development and production."
     ],
+    tags: ["React", "Node"],
     url: "https://react-google-news.herokuapp.com/",
     github: "https://github.com/MitulMistry/react-google-news"
   },
@@ -70,6 +71,7 @@ export const featuredProjects = [
       "Migrated legacy code for AngularJS into a modern Webpack build process to improve performance and maintainability.",
       "Implemented AngularJS Material for layout and styling to achieve a unified, professional aesthetic."
     ],
+    tags: ["AngularJS", "Node"],
     url: "https://steam-navigator.herokuapp.com/",
     github: "https://github.com/MitulMistry/steam-navigator"
   },
@@ -78,20 +80,22 @@ export const featuredProjects = [
     image: imgPaperTrader,
     description: "A Flask application to practice trading stocks using the IEX Cloud API. Users can buy and sell stocks based on current market prices.",
     bullets: [
-      "Developed a Flask back end using Python to manage user authentication, track transactions, calculate gains and losses, and store data using PostgreSQL.",
-      "Leveraged external APIs including IEX to get real time stock data as well as News API to provide related news articles for stock research."
+      "Developed a Flask back end in Python to track transactions, calculate gains and losses, and store user data in a PostgreSQL database with SQLAlchemy and Alembic.",
+      "Leveraged external APIs including IEX to get real time stock data as well as News API to provide related articles."
     ],
+    tags: ["Python", "Flask"],
     url: "https://flask-paper-trader.herokuapp.com/",
     github: "https://github.com/MitulMistry/paper-trader"
   },
   {
     title: "Journal Tool",
     image: imgJournalTool,
-    description: "A Django application for making journal entries and tracking mood. Users can keep track of events, activities, and cognitive distortions, and leverage associations between them.",
+    description: "A Django application for creating journal entries and tracking mood. Users can record events, activities, and cognitive distortions, and leverage associations between them.",
     bullets: [
-      "Used a combination of Django templates, JavaScript, and internal APIs to create web pages with asynchronous functionality.",
-      "Developed a Django back end to manage user authentication, process models, and calculate statistics for journal entries."
+      "Used Django templates, JavaScript, and an internal API to create web pages with asynchronous functionality.",
+      "Developed a Django back end in Python to manage user authentication, process models, and calculate statistics for journal entries."
     ],
+    tags: ["Python", "Django"],
     url: "https://journal-tool.herokuapp.com/",
     github: "https://github.com/MitulMistry/journal-tool"
   },
@@ -100,9 +104,10 @@ export const featuredProjects = [
     image: imgSketchbook,
     description: "A Rails/AngularJS web application for artists to curate and share their sketches. Users can upload images and filter them based on tags.",
     bullets: [
-      "Developed a Rails back end configured as an API using serializers to enable asynchronous CRUD requests for the front end.",
-      "Implemented Active Storage and integrated with AngularJS to handle image uploading, along with AWS S3 for production."
+      "Developed a Rails back end API using serializers to enable front end CRUD requests.",
+      "Integrated Active Storage with AngularJS to handle image uploading for AWS S3."
     ],
+    tags: ["AngularJS", "Ruby on Rails"],
     url: "https://angular-sketchbook.herokuapp.com/",
     github: "https://github.com/MitulMistry/sketchbook"
   }
@@ -112,20 +117,23 @@ export const projectCards = [
   {
     title: "Post-It",
     image: imgPostIt,
-    description: "A Rails/jQuery web application to make and sort notes. Users can load, create, and modify notes without page reloads. Uses jQuery to communicate with a Rails JSON API via AJAX.",
+    description: "A Rails/jQuery web application to create and sort notes. Uses jQuery to communicate asynchronously with a Rails JSON API.",
+    tags: ["Ruby on Rails", "jQuery"],
     url: "https://rails-post-it.herokuapp.com/",
     github: "https://github.com/MitulMistry/post-it"
   },
   {
     title: "Friend Finder",
     image: imgFriendFinder,
-    description: "A social networking application built with Rails. Users can be discovered based on interests and send messages to each other to form conversations.",
+    description: "A social networking application built with Rails. Users can discover each other based on interests and send messages.",
+    tags: ["Ruby on Rails"],
     github: "https://github.com/MitulMistry/friend-finder"
   },
   {
     title: "Steam Top Sellers CLI Gem",
     image: imgCmd,
-    description: "A Ruby command line application to get the current top selling games on Steam. Users can list currently top selling games and get more info on individual products. Queries Steam Storefront API and parses JSON responses into custom classes using an object-oriented paradigm.",
+    description: "A Ruby command line application to get the top selling games on Steam. Queries external API and parses JSON responses into custom classes.",
+    tags: ["Ruby"],
     github: "https://github.com/MitulMistry/steam-top-sellers-cli-gem"
   }
 ]
@@ -134,7 +142,7 @@ export const webDesigns = [
   {
     title: "Frank Frazetta",
     image: imgFrazetta,
-    description: "Front page for fantasy illustration website",
+    description: "Front page for a fantasy illustration website",
     url: "https://mitulmistry.github.io/frazetta-front-page/",
     github: "https://github.com/MitulMistry/frazetta-front-page"
   },
