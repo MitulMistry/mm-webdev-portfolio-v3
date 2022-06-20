@@ -27,10 +27,10 @@ const FeaturedProject = ({ project }) => {
           <p>{project.description}</p>
           <ul className="fa-ul app-bullets">
             {project.bullets.map((bullet, i) =>
-              <li key={i}><span className="fa-li"><FontAwesomeIcon icon={faCaretRight} /></span>{bullet}</li>
+              <li key={`blt-${i}`}><span className="fa-li"><FontAwesomeIcon icon={faCaretRight} /></span>{bullet}</li>
             )}
           </ul>
-          <p>
+          <div className="btn-group">
             {project.url &&
               <Button href={project.url} target="_blank" color="primary" outline size="sm" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faExternalLinkAlt} /> Demo Site
@@ -41,7 +41,16 @@ const FeaturedProject = ({ project }) => {
                 <FontAwesomeIcon icon={faGithub} /> Github
               </Button>
             }
-          </p>
+            {project.tags &&
+              <div className="tag-group">
+                {
+                  project.tags.map((tag, i) =>
+                    <span key={`tag-${i}`} className="project-tag">{tag}</span>
+                  )
+                }
+              </div>
+            }
+          </div>
         </Col>
       </Row>
     </div>

@@ -51,6 +51,7 @@
 
 // Custom Sass styling
 $primary-color: #0063E3;
+$secondary-gray: #7587a0;
 $page-max-width: map.get($grid-breakpoints, lg); //960px
 $page-min-width: 200px;
 
@@ -112,7 +113,7 @@ a {
     @include media-breakpoint-up(lg) {
       padding-left: 0;
       padding-right: 0;
-    }    
+    }
   }
 
   @include media-breakpoint-down(sm) {
@@ -217,7 +218,7 @@ a {
     p {
       margin-bottom: .75rem;
     }
-    
+
     @include media-breakpoint-up(lg) {
       padding-left: 2rem;
       padding-right: 2rem;
@@ -231,7 +232,7 @@ a {
 
   @include media-breakpoint-down(md) {
     padding-top: 2rem;
-  }  
+  }
 
   .row-featured-project {
     margin-bottom: 3rem;
@@ -265,8 +266,36 @@ a {
       }
     }
 
+    .btn-group {
+      margin-bottom: 0.8rem;
+    }
+
     .btn {
       margin-right: .8rem;
+    }
+
+    .tag-group {
+      display: inline;
+
+      @include media-breakpoint-down(lg) {
+       display: inline-block;
+       margin-top: .4rem;
+      }
+
+      .project-tag {
+        display: inline-block;
+        margin: .5rem 0 .5rem .45rem;
+        color: $secondary-gray;
+        font-size: .9rem;
+        padding: 0.1rem 0.4rem 0.15rem 0.4rem;
+        border: 1px solid $secondary-gray;
+        border-radius: .2rem;
+        // float: right;
+
+        @include media-breakpoint-down(lg) {
+          margin: .5rem .45rem .5rem 0;
+        }
+      }
     }
   }
 
