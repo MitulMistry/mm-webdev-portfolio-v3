@@ -15,10 +15,10 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
     actions.setWebpackConfig({
       module: {
         rules: [
-          {
-            test: /scrollreveal/,
-            use: loaders.null(),
-          },
+          // {
+          //   test: /scrollreveal/,
+          //   use: loaders.null(),
+          // },
           {
             test: /miniraf/,
             use: loaders.null(),
