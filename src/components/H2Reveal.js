@@ -1,18 +1,28 @@
-import React, { useEffect, useRef } from "react"
-import { scrollRevealConfig } from "../appData"
-import scrollRevealUtil from "../util/scrollRevealUtil"
+import React, { useEffect } from "react"
+import { motionVariants } from "../appData"
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from "react-intersection-observer"
 
 // Use like this:
 // <H2Reveal>Text</H2Reveal>
 const H2Reveal = ({ children, className }) => {
-  const revealContainer = useRef(null)
+  const control = useAnimation();
+  const [ref, inView] = useInView();
 
   useEffect(() => {
-    scrollRevealUtil.reveal(revealContainer.current, scrollRevealConfig())
-  }, [])
+    if (inView) control.start("visible");
+  }, [control, inView]);
 
   return (
-    <h2 className={className} ref={revealContainer}>{children}</h2>
+    <motion.h2
+      className={className}
+      ref={ref}
+      variants={motionVariants}
+      initial="hidden"
+      animate={control}
+    >
+      {children}
+    </motion.h2>
   )
 }
 

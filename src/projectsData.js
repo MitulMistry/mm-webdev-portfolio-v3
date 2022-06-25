@@ -23,7 +23,7 @@ export const featuredProjects = [
       "Used Redux to manage state for the front end and store data from API requests."
     ],
     tags: ["React", "Redux", "Ruby on Rails"],
-    url: "https://aic-explorer.herokuapp.com/",
+    url: "https://art-institute-explorer.herokuapp.com/",
     github: "https://github.com/MitulMistry/art-institute-explorer"
   },
   {
@@ -108,7 +108,7 @@ export const featuredProjects = [
       "Integrated Active Storage with AngularJS to handle image uploading for AWS S3."
     ],
     tags: ["AngularJS", "Ruby on Rails"],
-    url: "https://angular-sketchbook.herokuapp.com/",
+    // url: "https://angular-sketchbook.herokuapp.com/",
     github: "https://github.com/MitulMistry/sketchbook"
   }
 ]
@@ -119,7 +119,7 @@ export const projectCards = [
     image: imgPostIt,
     description: "A Rails/jQuery web application to create and sort notes. Uses jQuery to communicate asynchronously with a Rails JSON API.",
     tags: ["Ruby on Rails", "jQuery"],
-    url: "https://rails-post-it.herokuapp.com/",
+    // url: "https://rails-post-it.herokuapp.com/",
     github: "https://github.com/MitulMistry/post-it"
   },
   {

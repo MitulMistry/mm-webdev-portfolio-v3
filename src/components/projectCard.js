@@ -1,22 +1,30 @@
-import React, { useEffect, useRef } from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import { Col, Button } from "reactstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import { scrollRevealConfig } from "../appData"
-import scrollRevealUtil from "../util/scrollRevealUtil"
+import { motionVariants } from "../appData"
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from "react-intersection-observer"
 
 const ProjectCard = ({ project }) => {
-  const revealContainer = useRef(null)
+  const control = useAnimation();
+  const [ref, inView] = useInView();
 
   useEffect(() => {
-    scrollRevealUtil.reveal(revealContainer.current, scrollRevealConfig())
-  }, [])
+    if (inView) control.start("visible");
+  }, [control, inView]);
 
   return (
   <Col md="4" className="col-project-card">
-    <div ref={revealContainer}>
+    <motion.div
+      className="reveal-container"
+      ref={ref}
+      variants={motionVariants}
+      initial="hidden"
+      animate={control}
+    >
       <a href={project.url || project.github} target="_blank" rel="noopener noreferrer">
         <img src={project.image} className="img-fluid img-rounded img-app" alt="App screenshot" />
       </a>
@@ -34,7 +42,7 @@ const ProjectCard = ({ project }) => {
           </Button>
         }
       </p>
-    </div>
+    </motion.div>
   </Col>
   )
 }

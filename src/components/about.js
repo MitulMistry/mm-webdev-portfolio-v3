@@ -1,29 +1,38 @@
-import React, { useEffect, useRef } from "react"
-
+import React, { useEffect } from "react"
 import { Row, Col } from "reactstrap"
 import Intro from "./intro"
 import TechSkills from "./techSkills"
-import { scrollRevealConfig } from "../appData"
-import scrollRevealUtil from "../util/scrollRevealUtil"
+import { motionVariants } from "../appData"
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from "react-intersection-observer"
 
 const About = () => {
-  const revealContainer = useRef(null)
+  const control = useAnimation();
+  const [ref, inView] = useInView();
 
   useEffect(() => {
-    scrollRevealUtil.reveal(revealContainer.current, scrollRevealConfig())
-  }, [])
+    if (inView) control.start("visible");
+  }, [control, inView]);
 
   return (
-    <div id="about" ref={revealContainer}>
-      <Row>
-        <Col md="6" >
-          <Intro />
-        </Col>
-        <Col md="6">
-          <TechSkills />
-        </Col>
-      </Row>
-    </div>
+    <motion.div
+      className="reveal-container"
+      ref={ref}
+      variants={motionVariants}
+      initial="hidden"
+      animate={control}
+    >
+      <div id="about">
+        <Row>
+          <Col md="6" >
+            <Intro />
+          </Col>
+          <Col md="6">
+            <TechSkills />
+          </Col>
+        </Row>
+      </div>
+    </motion.div>
   )
 }
 

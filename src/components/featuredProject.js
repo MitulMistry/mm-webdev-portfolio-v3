@@ -1,21 +1,29 @@
-import React, { useEffect, useRef } from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import { Row, Col, Button } from "reactstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCaretRight, faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import { scrollRevealConfig } from "../appData"
-import scrollRevealUtil from "../util/scrollRevealUtil"
+import { motionVariants } from "../appData"
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from "react-intersection-observer"
 
 const FeaturedProject = ({ project }) => {
-  const revealContainer = useRef(null)
+  const control = useAnimation();
+  const [ref, inView] = useInView();
 
   useEffect(() => {
-    scrollRevealUtil.reveal(revealContainer.current, scrollRevealConfig())
-  }, [])
+    if (inView) control.start("visible");
+  }, [control, inView]);
 
   return (
-    <div ref={revealContainer}>
+    <motion.div
+      className="reveal-container"
+      ref={ref}
+      variants={motionVariants}
+      initial="hidden"
+      animate={control}
+    >
       <Row className="row-featured-project">
         <Col md="6" className="col-image">
           <a href={project.url || project.github} target="_blank" rel="noopener noreferrer">
@@ -53,7 +61,7 @@ const FeaturedProject = ({ project }) => {
           </div>
         </Col>
       </Row>
-    </div>
+    </motion.div>
   )
 }
 

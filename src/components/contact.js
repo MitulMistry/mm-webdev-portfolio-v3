@@ -1,22 +1,31 @@
-import React, { useEffect, useRef } from "react"
+import React, { useEffect } from "react"
 import { Row, Col, Button } from "reactstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
-import { scrollRevealConfig } from "../appData"
-import scrollRevealUtil from "../util/scrollRevealUtil"
+import { motionVariants } from "../appData"
+import { motion, useAnimation } from "framer-motion"
+import { useInView } from "react-intersection-observer"
 
 import { socialMedia } from "../appData"
 
 const Contact = () => {
-  const revealContainer = useRef(null)
+  const control = useAnimation();
+  const [ref, inView] = useInView();
 
   useEffect(() => {
-    scrollRevealUtil.reveal(revealContainer.current, scrollRevealConfig())
-  }, [])
+    if (inView) control.start("visible");
+  }, [control, inView]);
 
   return (
-    <div id="contact" ref={revealContainer}>
+    <motion.div
+      id="contact"
+      className="reveal-container"
+      ref={ref}
+      variants={motionVariants}
+      initial="hidden"
+      animate={control}
+    >
       <h2>Contact</h2>
       <Row>
         <Col sm="2">
@@ -48,7 +57,7 @@ const Contact = () => {
           </p>
         </Col>
       </Row>
-    </div>
+    </motion.div>
   )
 }
 
