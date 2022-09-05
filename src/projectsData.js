@@ -36,7 +36,7 @@ export const featuredProjects = [
       "Utilized AWS S3 and Active Storage to implement user image uploads and allow for scalability of image services."
     ],
     tags: ["Ruby on Rails"],
-    url: "https://rails-storyplan.herokuapp.com/",
+    url: "https://storyplan-rails.herokuapp.com/",
     github: "https://github.com/MitulMistry/rails-storyplan"
   },
   {
