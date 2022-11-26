@@ -23,7 +23,7 @@ export const featuredProjects = [
       "Used Redux to manage state for the front end and store data from API requests."
     ],
     tags: ["React", "Redux", "Ruby on Rails"],
-    url: "https://art-institute-explorer.herokuapp.com/",
+    url: "https://art-institute-explorer.up.railway.app/",
     github: "https://github.com/MitulMistry/art-institute-explorer"
   },
   {
@@ -36,7 +36,7 @@ export const featuredProjects = [
       "Utilized AWS S3 and Active Storage to implement user image uploads and allow for scalability of image services."
     ],
     tags: ["Ruby on Rails"],
-    url: "https://storyplan-rails.herokuapp.com/",
+    url: "https://rails-storyplan.up.railway.app/",
     github: "https://github.com/MitulMistry/rails-storyplan"
   },
   {
@@ -48,7 +48,7 @@ export const featuredProjects = [
       "Designed a story production pipeline for CSV to JSON files which are then parsed and loaded in game."
     ],
     tags: ["JavaScript", "React", "Redux"],
-    url: "https://the-valley.herokuapp.com/",
+    url: "https://the-valley-react.fly.dev/",
     github: "https://github.com/MitulMistry/the-valley-react"
   },
   {
@@ -60,7 +60,7 @@ export const featuredProjects = [
       "Used Webpack with custom configurations using Webpack-Merge to optimize project for development and production."
     ],
     tags: ["React", "Node"],
-    url: "https://react-google-news.herokuapp.com/",
+    url: "https://react-google-news.cyclic.app/",
     github: "https://github.com/MitulMistry/react-google-news"
   },
   {
@@ -72,7 +72,7 @@ export const featuredProjects = [
       "Implemented AngularJS Material for layout and styling to achieve a unified, professional aesthetic."
     ],
     tags: ["AngularJS", "Node"],
-    url: "https://steam-navigator.herokuapp.com/",
+    url: "https://steam-navigator.cyclic.app/",
     github: "https://github.com/MitulMistry/steam-navigator"
   },
   {
@@ -84,7 +84,7 @@ export const featuredProjects = [
       "Leveraged external APIs including IEX to get real time stock data as well as News API to provide related articles."
     ],
     tags: ["Python", "Flask"],
-    url: "https://flask-paper-trader.herokuapp.com/",
+    url: "https://paper-trader-py.fly.dev/",
     github: "https://github.com/MitulMistry/paper-trader"
   },
   {
@@ -96,7 +96,7 @@ export const featuredProjects = [
       "Developed a Django back end in Python to manage user authentication, process models, and calculate statistics for journal entries."
     ],
     tags: ["Python", "Django"],
-    url: "https://journal-tool.herokuapp.com/",
+    url: "https://journal-tool.fly.dev/",
     github: "https://github.com/MitulMistry/journal-tool"
   },
   {
