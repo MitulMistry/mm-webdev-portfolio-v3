@@ -19,7 +19,7 @@ module.exports = {
   },
 
   techSkillsText: {
-    "Languages": "JavaScript, Ruby, Python, C, HTML5/CSS3/Sass",
+    "Languages": "JavaScript, TypeScript, Ruby, Python, C, HTML5/CSS3/Sass",
     "Frameworks": "React, Redux, Ruby on Rails, AngularJS, Django, Node",
     "Databases": "PostgreSQL, SQLite, MongoDB",
     "Tools": "Git, Webpack, Docker, GraphQL, jQuery, Bootstrap",

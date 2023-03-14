@@ -5,6 +5,7 @@ import imgSteamNavigator from "./images/app_steam_navigator.jpg"
 import imgGoogleNews from "./images/app_react_google_news.jpg"
 import imgPaperTrader from "./images/app_paper_trader.jpg"
 import imgJournalTool from "./images/app_journal_tool.jpg"
+import imgCharacterSheet from "./images/app_character_sheet.jpg"
 import imgTheValley from "./images/app_the_valley_react.jpg"
 import imgFriendFinder from "./images/app_friend_finder.jpg"
 import imgPostIt from "./images/app_post_it.jpg"
@@ -98,6 +99,18 @@ export const featuredProjects = [
     tags: ["Python", "Django"],
     url: "https://journal-tool.fly.dev/",
     github: "https://github.com/MitulMistry/journal-tool"
+  },
+  {
+    title: "Character Sheet",
+    image: imgCharacterSheet,
+    description: "A React application for creating and updating character sheets for tabletop RPGs.",
+    bullets: [
+      "Used Redux Toolkit to implement a streamlined state management system and store characters in the browser's local storage.",
+      "Leveraged TypeScript along with a Jest test suite to ensure application integrity."
+    ],
+    tags: ["TypeScript", "React", "Redux"],
+    url: "https://react-character-sheet.cyclic.app/",
+    github: "https://github.com/MitulMistry/character-sheet"
   },
   {
     title: "Sketchbook",
