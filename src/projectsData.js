@@ -12,6 +12,7 @@ import imgPostIt from "./images/app_post_it.jpg"
 import imgFrazetta from "./images/app_frazetta.jpg"
 import imgArtSmart from "./images/app_artsmart.jpg"
 import imgCmd from "./images/app_cmd.jpg"
+import imgCmdPython from "./images/app_cmd_python.jpg"
 
 export const featuredProjects = [
   {
@@ -141,6 +142,13 @@ export const projectCards = [
     description: "A social networking application built with Rails. Users can discover each other based on interests and send messages.",
     tags: ["Ruby on Rails"],
     github: "https://github.com/MitulMistry/friend-finder"
+  },
+  {
+    title: "News Summarizer",
+    image: imgCmdPython,
+    description: "A command line application written in Python for accessing news articles and summarizing them. Integrates News API with an AI summary generator to easily browse and summarize articles.",
+    tags: ["Python"],
+    github: "https://github.com/MitulMistry/news-summarizer"
   },
   {
     title: "Steam Top Sellers CLI Gem",

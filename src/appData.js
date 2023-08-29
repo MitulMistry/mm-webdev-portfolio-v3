@@ -22,7 +22,7 @@ module.exports = {
     "Languages": "JavaScript, TypeScript, Ruby, Python, C, HTML5/CSS3/Sass",
     "Frameworks": "React, Redux, Ruby on Rails, AngularJS, Django, Node",
     "Databases": "PostgreSQL, SQLite, MongoDB",
-    "Tools": "Git, Webpack, Docker, GraphQL, jQuery, Bootstrap",
+    "Tools": "Git, Webpack, Docker, jQuery, Bootstrap",
     "Concepts": "Object-oriented programming, AJAX, RESTful architecture/APIs, TDD",
     "Software": "Linux, Photoshop, Illustrator"
   },
