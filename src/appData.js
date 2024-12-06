@@ -2,10 +2,10 @@ module.exports = {
   profileText: {
     name: "Mitul Mistry",
     title: "Full Stack Engineer",
-    subtitle: "I'm a software engineer with experience in React and Rails.",
+    subtitle: "From APIs to UX, I build software that makes a difference.",
     bio: [
-      "I take web applications from design to implementation and I'm comfortable working in both the front and back end.",
-      "I have a background in object oriented programming, as well as visual design, and I use my broad experience to bring applications to life.",
+      "I specialize in building robust applications from design to deployment, with expertise in both front-end and back-end technologies like Node, React, and Rails.",
+      "My background in software development and visual design helps me bridge technical and creative needs, turning ideas into polished, functional products.",
     ],
   },
 
