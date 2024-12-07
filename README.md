@@ -1,12 +1,15 @@
 # Web Development Portfolio v3
+
 A [Gatsby](https://www.gatsbyjs.com/) portfolio site for my web applications. The previous React version can be found [here](https://github.com/MitulMistry/mm-webdev-portfolio-v2), while the initial HTML version can be found [here](https://github.com/MitulMistry/mm-webdev-portfolio-v1).
 
 ## Gatsby
+
 This project was developed using the default [Gatsby starter template](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-default/).
 
 You can find the documentation for Gatsby [here](https://www.gatsbyjs.com/docs).
 
 ## Install Instructions
+
 The Gatsby CLI is used to build and run the application. Node Package Manager (NPM) is used for dependencies. To install the application locally, follow these instructions:
 
 1. Install [Node.js](https://nodejs.org/). NPM comes packaged with it.
@@ -17,6 +20,7 @@ The Gatsby CLI is used to build and run the application. Node Package Manager (N
 Fonts are preloaded for production builds using [gatsby-plugin-preload-fonts](https://www.gatsbyjs.com/plugins/gatsby-plugin-preload-fonts/). If any fonts or routes have been changed, run `gatsby develop` and `npm preload-fonts` to rebuild the font cache.
 
 ## Commands
+
 `gatsby develop` - Runs the app in development mode.
 
 `gatsby build` - Builds the app for production to the build folder.
@@ -78,5 +82,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 The fastest way to combine your favorite tools and APIs to build the fastest sites, stores, and apps for the web. And also the best place to build, deploy, and host your Gatsby sites.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
 ## License
+
 This project is open source under the terms of the [BSD Zero Clause License](https://opensource.org/licenses/0BSD).

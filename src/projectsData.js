@@ -80,7 +80,7 @@ export const featuredProjects = [
       "Implemented AngularJS Material for a clean, responsive user interface",
     ],
     tags: ["AngularJS", "Node"],
-    url: "https://steam-navigator.cyclic.app/",
+    // url: "https://steam-navigator.cyclic.app/",
     github: "https://github.com/MitulMistry/steam-navigator",
   },
   {

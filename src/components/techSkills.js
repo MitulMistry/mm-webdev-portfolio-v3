@@ -3,10 +3,14 @@ import React from "react"
 import { techSkillsText } from "../appData"
 
 const TechSkills = () => {
-  var paragraphs =[];
+  var paragraphs = []
 
   for (const header in techSkillsText) {
-    paragraphs.push(<p key={header.toString()}><strong>{header}:</strong> {techSkillsText[header]}</p>)
+    paragraphs.push(
+      <p key={header.toString()}>
+        <strong>{header}:</strong> {techSkillsText[header]}
+      </p>
+    )
   }
 
   return (

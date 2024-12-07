@@ -6,12 +6,12 @@ import { useInView } from "react-intersection-observer"
 // Use like this:
 // <H2Reveal>Text</H2Reveal>
 const H2Reveal = ({ children, className }) => {
-  const control = useAnimation();
-  const [ref, inView] = useInView();
+  const control = useAnimation()
+  const [ref, inView] = useInView()
 
   useEffect(() => {
-    if (inView) control.start("visible");
-  }, [control, inView]);
+    if (inView) control.start("visible")
+  }, [control, inView])
 
   return (
     <motion.h2

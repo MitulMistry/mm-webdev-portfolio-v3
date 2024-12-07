@@ -20,13 +20,15 @@ const Footer = () => (
       </a>
     </p>
     <p>
-      <a href="https://github.com/MitulMistry/mm-webdev-portfolio-v3" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://github.com/MitulMistry/mm-webdev-portfolio-v3"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Github repo for this site
       </a>
     </p>
-    <p>
-      &copy; Mitul Mistry {new Date().getFullYear()}
-    </p>
+    <p>&copy; Mitul Mistry {new Date().getFullYear()}</p>
   </footer>
 )
 

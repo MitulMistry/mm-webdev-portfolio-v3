@@ -9,19 +9,13 @@ const Projects = () => (
   <div id="projects">
     <H2Reveal>Projects</H2Reveal>
     <div className="projects-main">
-      <FeaturedProjects
-        projects={featuredProjects}
-      />
-      <ProjectCards
-        projects={projectCards}
-      />
+      <FeaturedProjects projects={featuredProjects} />
+      <ProjectCards projects={projectCards} />
     </div>
-    
+
     <H2Reveal className="secondary">Web Design</H2Reveal>
     <div className="web-design">
-      <ProjectCards
-        projects={webDesigns}
-      />
+      <ProjectCards projects={webDesigns} />
     </div>
   </div>
 )

@@ -41,12 +41,10 @@ const Loader = ({ finishLoading }) => {
   }
 
   useEffect(() => {
-    const timeout = setTimeout(() => setIsMounted(true), 10);
+    const timeout = setTimeout(() => setIsMounted(true), 10)
     animate()
-    return () => clearTimeout(timeout);
+    return () => clearTimeout(timeout)
   }, [])
-
-
 }
 
 Loader.propTypes = {

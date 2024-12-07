@@ -1,25 +1,28 @@
 import React, { useState } from "react"
-import { Container, Collapse, Navbar, NavbarBrand, NavbarToggler, Nav, NavItem, NavLink } from "reactstrap"
+import {
+  Container,
+  Collapse,
+  Navbar,
+  NavbarBrand,
+  NavbarToggler,
+  Nav,
+  NavItem,
+  NavLink,
+} from "reactstrap"
 import imgLogo from "../images/mm_logo_01.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 
-import { socialMedia } from "../appData";
+import { socialMedia } from "../appData"
 
 const NavBar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false)
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const toggleMenu = () => setMenuOpen(!menuOpen)
 
   return (
-    <Navbar
-      id="main-navbar"
-      color="primary"
-      dark
-      expand="sm"
-      fixed="top"
-    >
+    <Navbar id="main-navbar" color="primary" dark expand="sm" fixed="top">
       <Container>
         <NavbarToggler className="ms-auto" onClick={toggleMenu} />
         <Collapse isOpen={menuOpen} navbar>

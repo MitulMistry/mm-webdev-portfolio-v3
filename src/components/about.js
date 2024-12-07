@@ -7,12 +7,12 @@ import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 
 const About = () => {
-  const control = useAnimation();
-  const [ref, inView] = useInView();
+  const control = useAnimation()
+  const [ref, inView] = useInView()
 
   useEffect(() => {
-    if (inView) control.start("visible");
-  }, [control, inView]);
+    if (inView) control.start("visible")
+  }, [control, inView])
 
   return (
     <motion.div
@@ -24,7 +24,7 @@ const About = () => {
     >
       <div id="about">
         <Row>
-          <Col md="6" >
+          <Col md="6">
             <Intro />
           </Col>
           <Col md="6">

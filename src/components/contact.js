@@ -10,12 +10,12 @@ import { useInView } from "react-intersection-observer"
 import { socialMedia } from "../appData"
 
 const Contact = () => {
-  const control = useAnimation();
-  const [ref, inView] = useInView();
+  const control = useAnimation()
+  const [ref, inView] = useInView()
 
   useEffect(() => {
-    if (inView) control.start("visible");
-  }, [control, inView]);
+    if (inView) control.start("visible")
+  }, [control, inView])
 
   return (
     <motion.div
@@ -29,7 +29,13 @@ const Contact = () => {
       <h2>Contact</h2>
       <Row>
         <Col sm="2">
-          <Button href={`mailto:${socialMedia.email}`} color="primary" outline size="sm" rel="noopener noreferrer">
+          <Button
+            href={`mailto:${socialMedia.email}`}
+            color="primary"
+            outline
+            size="sm"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faEnvelope} /> Email
           </Button>
         </Col>
@@ -44,14 +50,25 @@ const Contact = () => {
       </Row>
       <Row className="row-top-margin">
         <Col sm="2">
-          <Button href={socialMedia.linkedin} target="_blank" color="primary" outline size="sm" rel="noopener noreferrer">
+          <Button
+            href={socialMedia.linkedin}
+            target="_blank"
+            color="primary"
+            outline
+            size="sm"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faLinkedinIn} /> LinkedIn
           </Button>
         </Col>
         <Col sm="10" className="linkedin-text">
           <p>Or add me on LinkedIn at:</p>
           <p>
-            <a href={socialMedia.linkedin} target="_blank" rel="noopener noreferrer">
+            <a
+              href={socialMedia.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {`LinkedIn.com/in/${socialMedia.linkedinUser}`}
             </a>
           </p>

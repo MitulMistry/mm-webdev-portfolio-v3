@@ -1,1 +1,18 @@
-{"timestamp":1652377906344,"hash":"efbf74b6ca175752197bbfff6fc9f709","assets":{"/dev-404-page/":{"https://fonts.gstatic.com/s/opensans/v29/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2":true},"/404/":{"https://fonts.gstatic.com/s/opensans/v29/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2":true},"/404.html":{"https://fonts.gstatic.com/s/opensans/v29/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2":true},"/":{"https://fonts.gstatic.com/s/opensans/v29/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2":true}}}
+{
+  "timestamp": 1652377906344,
+  "hash": "efbf74b6ca175752197bbfff6fc9f709",
+  "assets": {
+    "/dev-404-page/": {
+      "https://fonts.gstatic.com/s/opensans/v29/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2": true
+    },
+    "/404/": {
+      "https://fonts.gstatic.com/s/opensans/v29/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2": true
+    },
+    "/404.html": {
+      "https://fonts.gstatic.com/s/opensans/v29/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2": true
+    },
+    "/": {
+      "https://fonts.gstatic.com/s/opensans/v29/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2": true
+    }
+  }
+}

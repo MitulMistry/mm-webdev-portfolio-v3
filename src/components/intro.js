@@ -4,10 +4,11 @@ import { profileText } from "../appData"
 
 const Intro = () => (
   <div className="intro">
-    <h1 className="title">{ profileText.name }</h1>
-    <h2>{ profileText.title }</h2>
-    <h3>{ profileText.subtitle }</h3>
-    {profileText.bio && profileText.bio.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+    <h1 className="title">{profileText.name}</h1>
+    <h2>{profileText.title}</h2>
+    <h3>{profileText.subtitle}</h3>
+    {profileText.bio &&
+      profileText.bio.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
   </div>
 )
 
