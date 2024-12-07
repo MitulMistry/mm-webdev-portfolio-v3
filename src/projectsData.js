@@ -21,13 +21,27 @@ export const featuredProjects = [
     description:
       "A full-stack web app allowing users to explore the museum's catalog, search for artworks, and create custom collections.",
     bullets: [
-      "Built a React front end integrated with a Rails API back end to manage data from the Art Institute API",
-      "Implemented artwork saving and collection creation features using ActiveRecord and PostgreSQL.",
-      "Managed front-end state with Redux to optimize data flow and enhance user interactions",
+      "Built a React front end to browse and save thousands of artworks via an external API",
+      "Developed a Rails API to manage collections and artwork data in PostgreSQL",
+      "Reduced API calls with caching, improving performance.",
     ],
     tags: ["React", "Redux", "Ruby on Rails"],
     url: "https://art-institute-explorer.up.railway.app/",
     github: "https://github.com/MitulMistry/art-institute-explorer",
+  },
+  {
+    title: "The Valley",
+    image: imgTheValley,
+    description:
+      "A non-linear storytelling engine that tracks user decisions and adapts the narrative dynamically.",
+    bullets: [
+      "Used Redux and custom JavaScript to manage dynamic text-based narratives",
+      "Created a CSV-to-JSON pipeline for efficient story file processing",
+      "Designed a branching system to track user choices and outcomes",
+    ],
+    tags: ["JavaScript", "React", "Redux"],
+    url: "https://the-valley-react.fly.dev/",
+    github: "https://github.com/MitulMistry/the-valley-react",
   },
   {
     title: "Storyplan",
@@ -42,19 +56,6 @@ export const featuredProjects = [
     tags: ["Ruby on Rails"],
     url: "https://rails-storyplan.up.railway.app/",
     github: "https://github.com/MitulMistry/rails-storyplan",
-  },
-  {
-    title: "The Valley",
-    image: imgTheValley,
-    description:
-      "A non-linear storytelling engine that tracks user decisions and adapts the narrative dynamically.",
-    bullets: [
-      "Integrated Redux with custom JavaScript classes to manage and update game state",
-      "Designed a content pipeline to convert CSV story data into JSON for efficient loading and parsing",
-    ],
-    tags: ["JavaScript", "React", "Redux"],
-    url: "https://the-valley-react.fly.dev/",
-    github: "https://github.com/MitulMistry/the-valley-react",
   },
   {
     title: "React Google News",
